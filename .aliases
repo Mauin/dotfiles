@@ -1,0 +1,61 @@
+# Use vim as default editor
+export EDITOR=/usr/bin/vim
+
+BLACK="\[\e[0;30m\]"
+BBLACK="\[\e[1;30m\]"
+GREEN="\[\e[0;32m\]"
+BLUE="\[\e[0;34m\]"
+BBLUE="\[\e[1;34m\]"
+CYAN="\[\e[0;36m\]"
+BCYAN="\[\e[1;36m\]"
+RED="\[\e[0;31m\]"
+YELLOW="\[\e[0;33m\]"
+COLOREND="\[\e[00m\]"
+
+# [ALIAS] Commands
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ll='ls -la'
+alias la='ls -a'
+alias ls='ls -G'
+
+# [ALIAS] Top
+alias cpu='top -o cpu'
+alias mem='top -o rsize'
+
+# [ALIAS] Misc
+alias cl="fc -e -|pbcopy" # copy last terminal output to clipboard
+alias diff='cdiff -s'
+alias todos="ack --nogroup '(TODO|FIX(ME)?):'" # list todos in project
+alias a='echo "------------Your aliases------------";alias' # list aliases
+alias sa='source ~/.zshrc;echo ".zshrc sourced."' # refresh aliases
+alias c='clear'
+alias cc='c && c'
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# [ALIAS] (╯°□°)╯︵ ┻━┻
+alias tableflip='echo "(╯°□°)╯︵ ┻━┻" && echo "(╯°□°)╯︵ ┻━┻" | pbcopy'
+alias flip='tableflip'
+alias notableflip='echo "┬─┬ ノ( ^_^ノ)" && echo "┬─┬ ノ( ^_^ノ)" | pbcopy'
+alias noflip='notableflip'
+
+# [ALIAS] Git commands
+alias ts='tig status'
+alias gco='git checkout'
+alias develop='git checkout develop'
+alias master='git checkout master'
+alias mergedevelop='develop && git pull && git last && git merge develop'
+alias branches='for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort'
+alias cleanmerged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+# [ALIAS] Docker commands
+alias dockerip='docker-machine ip default'
+alias dps='docker ps'
+alias dockerstart='docker-machine start default && docker-machine env default && eval "$(docker-machine env default)"'
+
+# [ALIAS] ADB
+alias devices='adb devices'
+alias adbwearconnect='adb forward tcp:4444 localabstract:/adb-hub && adb connect localhost:4444'
+alias adbrestart='adb kill-server && adb start-server'
+alias adbscreenshot='adb shell screencap /sdcard/screen.png && adb pull /sdcard/screen.png ~/Desktop/Screenshots/screen.png'
