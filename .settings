@@ -1,3 +1,6 @@
+# Use vim as default editor
+export EDITOR=/usr/bin/vim
+
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
