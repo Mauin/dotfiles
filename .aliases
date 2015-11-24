@@ -28,6 +28,8 @@ alias noflip='notableflip'
 
 # [ALIAS] Git commands
 alias ts='tig status'
+alias t='tig'
+alias gc='git commit'
 alias gco='git checkout'
 alias develop='git checkout develop'
 alias master='git checkout master'

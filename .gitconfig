@@ -26,4 +26,3 @@
 [core]
 	ignorecase = false
 	autocrlf = input
-	excludesfile = /Users/m.ramin/.gitignore_global
