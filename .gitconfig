@@ -9,6 +9,9 @@
 	# Reset
 	whoops = reset --hard
 
+	# Clean up commits with interactive rebase
+	tidy = rebase -i @{upstream}
+
 	# Status
 	st = status --short
 
@@ -26,3 +29,14 @@
 [core]
 	ignorecase = false
 	autocrlf = input
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[rerere]
+	autoupdate = true
+	enabled = true
