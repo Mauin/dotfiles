@@ -11,7 +11,7 @@ ZSH_THEME="sunrise"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize github adb docker jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+plugins=(git colored-man colorize github adb docker jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting z)
 
 # User configuration
 
@@ -24,5 +24,3 @@ source ~/.bash_machine_specific
 source ~/.aliases
 source ~/.settings
 source ~/.osx
-
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
