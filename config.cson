@@ -1,0 +1,20 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "Roboto Mono"
+    fontSize: 11
+  core:
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "6b5686f6-7b23-82e4-f6b9-ef97ee01b82e"
+  welcome:
+    showOnStartup: false
+  minimap: {}
+  "one-dark-ui": {}
+  autosave:
+    enabled: true
+  "atom-beautify":
+    _analyticsUserId: "00b28efe-b808-4a6d-a177-74e334c01992"
