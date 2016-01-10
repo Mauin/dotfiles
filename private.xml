@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>ctrl+f-keys to media keys</name>
+    <identifier>mediakeys</identifier>
+    <autogen>__KeyToKey__ KeyCode::F2 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F3 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_UP</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+    <autogen>__KeyToKey__ KeyCode::F9 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F10 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F11 | ModifierFlag::NONE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+  </item>
+</root>
