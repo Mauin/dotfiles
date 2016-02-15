@@ -2,7 +2,7 @@
   editor:
     invisibles: {}
     fontFamily: "Roboto Mono"
-    fontSize: 11
+    fontSize: 10
   core:
     themes: [
       "one-dark-ui"
