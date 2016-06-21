@@ -6,6 +6,12 @@
 	# Push current branch
 	pushthis = push -u origin HEAD
 
+    # Checkout new branch
+	cob = checkout -b
+
+	# Checkout
+	co = checkout
+    
 	# Reset
 	whoops = reset --hard
 
