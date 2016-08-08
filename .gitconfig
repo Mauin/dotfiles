@@ -1,3 +1,5 @@
+[init]
+	templatedir = ~/.git/templates
 [alias]
 	# Show commit log
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
@@ -6,12 +8,12 @@
 	# Push current branch
 	pushthis = push -u origin HEAD
 
-    # Checkout new branch
+        # Checkout new branch
 	cob = checkout -b
 
 	# Checkout
 	co = checkout
-    
+
 	# Reset
 	whoops = reset --hard
 
@@ -43,6 +45,12 @@
     local = yellow
     remote = green
 
+[diff]
+	compactionHeuristic = true
+
 [rerere]
 	autoupdate = true
 	enabled = true
+[user]
+	name = Marvin Ramin
+	useConfigOnly = true
